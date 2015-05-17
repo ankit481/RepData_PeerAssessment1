@@ -91,6 +91,9 @@ sapply(activity, function(x) sum(is.na(x)))
 
 - Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 
+### STRATEGY 
+For imputing the missing values present in the data set, I'll be replacing the NA values by the average value computed per interval for all the days. This will ensure that the imputed data does not introduce extraneous variance to the existing data.
+
 - Create a new dataset that is equal to the original dataset but with the missing data filled in.
 
 ```{r}
